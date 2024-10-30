@@ -39,7 +39,7 @@ def main():
 
             # Collect files
             files = Path(f'{folder}/*{suffix}')
-            files = glob.glob(str(files))
+            files = sorted(glob.glob(str(files)))
 
             # Create rename sheet
             df_lst = []
